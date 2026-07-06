@@ -1,4 +1,5 @@
 import type {ReactNode} from "react";
+import "./NavLink.css";
 
 interface NavLinkProps {
     href: string;
@@ -7,7 +8,7 @@ interface NavLinkProps {
 
 const NavLink = ({href, children}: NavLinkProps) => {
     return (
-        <a href={href} className="text-lg">{children}</a>
+        <a href={href} className="link">{children}</a>
     )
 }
 

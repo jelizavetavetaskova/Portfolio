@@ -1,6 +1,6 @@
 import NavLink from "./NavLink.tsx";
 import {Disclosure, DisclosureButton, DisclosurePanel} from "@headlessui/react";
-import {Menu, X} from "lucide-react";
+import {Menu, Sun, X} from "lucide-react";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="settings">
-                    <img src="/theme.png" alt="toggle theme" className="icon"/>
+                    <button className="theme"><Sun size={30}/></button>
                     <p>EN</p>
                 </div>
             </div>

@@ -1,0 +1,17 @@
+.link {
+    color: var(--text-primary);
+    font-size: var(--text-lg);
+    line-height: var(--leading-lg);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.link:hover {
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .link {
+        font-size: var(--text-base);
+    }
+}

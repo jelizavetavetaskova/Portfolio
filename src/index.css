@@ -5,6 +5,23 @@
     --text-primary: #f3f4f6;
     --text-secondary: #9ca3af;
 
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-base: 16px;
+    --text-lg: 18px;
+    --text-xl: 20px;
+    --text-2xl: 24px;
+    --text-3xl: 30px;
+    --text-4xl: 36px;
+    --text-5xl: 48px;
+    --text-6xl: 64px;
+    --text-7xl: 72px;
+
+    --leading-sm: 20px;
+    --leading-base: 24px;
+    --leading-lg: 28px;
+    --leading-xl: 28px;
+
     --accent: #f97316;
     --accent-hover: #fb923c;
 
