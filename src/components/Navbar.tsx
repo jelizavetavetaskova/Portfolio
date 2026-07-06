@@ -1,16 +1,17 @@
 import NavLink from "./NavLink.tsx";
 import {Disclosure, DisclosureButton, DisclosurePanel} from "@headlessui/react";
 import {Menu, X} from "lucide-react";
+import "./Navbar.css";
 
 const Navbar = () => {
     return (
         <>
-            <div className="w-full fixed hidden md:flex flex-row py-5 px-12 items-center gap-40 border-b border-b-black">
-                <div className="w-1/3">
-                    <img src="/fox.png" alt="fox icon" className="w-10 h-10"/>
+            <div className="navbar-desktop">
+                <div>
+                    <img src="/fox.png" alt="fox icon" className="icon"/>
                 </div>
 
-                <div className="w-1/3 flex flex-row justify-center gap-8">
+                <div className="links">
                     <NavLink href="#about">About</NavLink>
                     <NavLink href="#skills">Skills</NavLink>
                     <NavLink href="#projects">Projects</NavLink>
@@ -18,23 +19,23 @@ const Navbar = () => {
                     <NavLink href="#contacts">Contacts</NavLink>
                 </div>
 
-                <div className="w-1/3 flex flex-row items-center justify-center gap-4">
-                    <img src="/theme.png" alt="theme toggle" className="w-10 h-10"/>
+                <div className="settings">
+                    <img src="/theme.png" alt="toggle theme" className="icon"/>
                     <p>EN</p>
                 </div>
             </div>
 
-            <div className="md:hidden">
-                <Disclosure as="div" className="relative border-b border-b-black flex flex-row justify-between px-5 py-2 items-center">
-                    <div className="w-1/3">
-                        <img src="/fox.png" alt="fox icon" className="w-7 h-7"/>
+            <div>
+                <Disclosure as="div" className="navbar-mobile">
+                    <div>
+                        <img src="/fox.png" alt="fox icon" className="icon"/>
                     </div>
-                    <DisclosureButton className="cursor-pointer m-2">
+                    <DisclosureButton className="menu">
                         {({open}) => open ? <X /> : <Menu />}
                     </DisclosureButton>
-                    <DisclosurePanel className="absolute top-full left-0 w-full bg-white border-b border-b-black">
+                    <DisclosurePanel className="panel">
                         {({close}) => (
-                            <div className="flex flex-col text-center gap-1" onClick={() => close()}>
+                            <div className="links" onClick={() => close()}>
                                 <NavLink href="#about">About</NavLink>
                                 <NavLink href="#skills">Skills</NavLink>
                                 <NavLink href="#projects">Projects</NavLink>

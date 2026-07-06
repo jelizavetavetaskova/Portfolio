@@ -1,0 +1,86 @@
+.navbar-mobile {
+    display: none;
+}
+
+.navbar-desktop {
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--border);
+    color: var(--text-primary);
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 48px;
+    align-items: center;
+    gap: 160px;
+}
+
+.navbar-desktop div {
+    width: 33%;
+}
+
+.navbar-desktop .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+}
+
+.navbar-desktop .settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    .navbar-desktop {
+        display: none;
+    }
+
+    .navbar-mobile {
+        position: relative;
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 20px;
+    }
+
+    .icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .navbar-mobile .panel {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--bg-primary);
+    }
+
+    .navbar-mobile .panel .links {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 4px;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--border);
+        border-top: 1px solid var(--border);
+    }
+
+    .menu {
+        cursor: pointer;
+        margin: 8px;
+        background: var(--bg-primary);
+        border: none;
+        color: var(--text-primary);
+    }
+}

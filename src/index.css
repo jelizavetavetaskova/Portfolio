@@ -1,1 +1,30 @@
-@import "tailwindcss";
+:root {
+    --bg-primary: #16171d;
+    --bg-secondary: #1f2028;
+
+    --text-primary: #f3f4f6;
+    --text-secondary: #9ca3af;
+
+    --accent: #f97316;
+    --accent-hover: #fb923c;
+
+    --border: #2e303a;
+
+    --font-sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
