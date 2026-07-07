@@ -2,7 +2,7 @@ import "./Hero.css";
 
 const Hero = () => {
     return (
-        <div className="hero">
+        <section className="hero">
             <div className="about">
                 <div className="hello">
                     <p>Hello! I am a</p>
@@ -23,7 +23,7 @@ const Hero = () => {
             <div className="mascot">
                 <img src="/fox-for-about.png" alt="fox"/>
             </div>
-        </div>
+        </section>
     )
 }
 

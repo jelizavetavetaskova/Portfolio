@@ -20,7 +20,9 @@
     --leading-sm: 20px;
     --leading-base: 24px;
     --leading-lg: 28px;
-    --leading-xl: 28px;
+    --leading-xl: 32px;
+    --leading-2xl: 36px;
+    --leading-3xl: 40px;
 
     --accent: #f97316;
     --accent-hover: #fb923c;
