@@ -21,7 +21,7 @@ const Skills = () => {
             title: "Languages & Frameworks",
             children:
             <ul className={styles.techGroup}>
-                <li><i className="devicon-java-plain tech-icon" />Java</li>
+                <li><i className={`devicon-java-plain ${styles.techIcon}`} />Java</li>
                 <li><SiSpringboot className={styles.techIcon} />Spring Boot</li>
                 <li><SiTypescript className={styles.techIcon} />TypeScript</li>
                 <li><SiReact className={styles.techIcon} />React</li>
@@ -65,7 +65,7 @@ const Skills = () => {
 
     return (
         <section id="skills">
-            <h1>My Skills</h1>
+            <h1 className={styles.title}>My Skills</h1>
 
             <div className={styles.skillCards}>
                 {skills.map((skill) => (
