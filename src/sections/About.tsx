@@ -48,7 +48,7 @@ const About = () => {
 
             <div className="about-cards">
                 {cards.map((card) => (
-                    <Card title={card.title} icon={card.icon}>{card.children}</Card>
+                    <Card key={card.title} title={card.title} icon={card.icon}>{card.children}</Card>
                 ))}
             </div>
         </section>
