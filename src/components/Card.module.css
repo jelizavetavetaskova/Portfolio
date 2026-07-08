@@ -13,10 +13,10 @@
     margin-top: 5px;
 }
 
-.card .card-icon {
+.card .cardIcon {
     color: var(--accent);
 }
 
-.card .card-content {
+.card .cardContent {
     color: var(--text-secondary);
 }

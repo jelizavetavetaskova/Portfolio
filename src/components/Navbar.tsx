@@ -1,17 +1,17 @@
 import NavLink from "./NavLink.tsx";
 import {Disclosure, DisclosureButton, DisclosurePanel} from "@headlessui/react";
 import {Menu, Sun, X} from "lucide-react";
-import "./Navbar.css";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
     return (
         <>
-            <div className="navbar-desktop">
+            <div className={styles.navbarDesktop}>
                 <div>
-                    <img src="/fox.png" alt="fox icon" className="icon"/>
+                    <img src="/fox.png" alt="fox icon" className={styles.icon}/>
                 </div>
 
-                <div className="links">
+                <div className={styles.links}>
                     <NavLink href="#about">About</NavLink>
                     <NavLink href="#skills">Skills</NavLink>
                     <NavLink href="#projects">Projects</NavLink>
@@ -19,23 +19,23 @@ const Navbar = () => {
                     <NavLink href="#contacts">Contacts</NavLink>
                 </div>
 
-                <div className="settings">
-                    <button className="theme"><Sun size={30}/></button>
+                <div className={styles.settings}>
+                    <button className={styles.theme}><Sun size={30}/></button>
                     <p>EN</p>
                 </div>
             </div>
 
             <div>
-                <Disclosure as="div" className="navbar-mobile">
+                <Disclosure as="div" className={styles.navbarMobile}>
                     <div>
-                        <img src="/fox.png" alt="fox icon" className="icon"/>
+                        <img src="/fox.png" alt="fox icon" className={styles.icon}/>
                     </div>
-                    <DisclosureButton className="menu">
+                    <DisclosureButton className={styles.menu}>
                         {({open}) => open ? <X /> : <Menu />}
                     </DisclosureButton>
-                    <DisclosurePanel className="panel">
+                    <DisclosurePanel className={styles.panel}>
                         {({close}) => (
-                            <div className="links" onClick={() => close()}>
+                            <div className={styles.links} onClick={() => close()}>
                                 <NavLink href="#about">About</NavLink>
                                 <NavLink href="#skills">Skills</NavLink>
                                 <NavLink href="#projects">Projects</NavLink>

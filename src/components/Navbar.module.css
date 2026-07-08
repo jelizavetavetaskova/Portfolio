@@ -1,8 +1,8 @@
-.navbar-mobile {
+.navbarMobile {
     display: none;
 }
 
-.navbar-desktop {
+.navbarDesktop {
     background: var(--bg-primary);
     border-bottom: 1px solid var(--border);
     color: var(--text-primary);
@@ -15,18 +15,18 @@
     gap: 160px;
 }
 
-.navbar-desktop div {
+.navbarDesktop div {
     width: 33%;
 }
 
-.navbar-desktop .links {
+.navbarDesktop .links {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 32px;
 }
 
-.navbar-desktop .settings {
+.navbarDesktop .settings {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -34,7 +34,7 @@
     gap: 16px;
 }
 
-.navbar-desktop .settings .theme {
+.navbarDesktop .settings .theme {
     color: var(--text-primary);
     background: var(--bg-primary);
     border: none;
@@ -46,11 +46,11 @@
 }
 
 @media (max-width: 768px) {
-    .navbar-desktop {
+    .navbarDesktop {
         display: none;
     }
 
-    .navbar-mobile {
+    .navbarMobile {
         position: relative;
         border-bottom: 1px solid var(--border);
         display: flex;
@@ -65,7 +65,7 @@
         height: 28px;
     }
 
-    .navbar-mobile .panel {
+    .navbarMobile .panel {
         position: absolute;
         top: 100%;
         left: 0;
@@ -73,7 +73,7 @@
         background: var(--bg-primary);
     }
 
-    .navbar-mobile .panel .links {
+    .navbarMobile .panel .links {
         display: flex;
         flex-direction: column;
         text-align: center;

@@ -1,0 +1,18 @@
+h1 {
+    font-size: var(--text-5xl);
+    margin-bottom: 20px;
+}
+
+.skillCards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.skillCards ul {
+    list-style-type: none;
+}
+
+.skillCards ul li {
+    padding: 10px;
+}

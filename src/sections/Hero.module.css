@@ -31,7 +31,7 @@
     margin: 20px 0;
 }
 
-.projects-link {
+.projectsLink {
     background: var(--accent);
     color: var(--text-primary);
     font-size: var(--text-base);
@@ -42,7 +42,7 @@
     text-align: center;
 }
 
-.cv-button {
+.cvButton {
     border: 1px solid var(--accent);
     padding: 11px 20px;
     background: var(--bg-primary);
@@ -66,7 +66,7 @@
     height: 300px;
 }
 
-.cv-button:hover {
+.cvButton:hover {
     background: var(--accent-hover);
     color: var(--text-primary);
 }
@@ -94,12 +94,12 @@
         width: 60%;
     }
 
-    .buttons .projects-link {
+    .buttons .projectsLink {
         width: 100%;
         padding: 10px;
     }
 
-    .buttons .cv-button {
+    .buttons .cvButton {
         width: 100%;
         padding: 10px;
         margin: 10px 0;

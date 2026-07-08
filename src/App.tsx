@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from "./components/Navbar.tsx";
 import Hero from "./sections/Hero.tsx";
 import About from "./sections/About.tsx";
+import Skills from "./sections/Skills.tsx";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
           <Navbar />
           <Hero />
           <About />
+          <Skills />
       </>
   )
 }
