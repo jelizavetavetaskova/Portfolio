@@ -15,7 +15,6 @@ const Navbar = () => {
                     <NavLink href="#about">About</NavLink>
                     <NavLink href="#skills">Skills</NavLink>
                     <NavLink href="#projects">Projects</NavLink>
-                    <NavLink href="#tech">Technologies</NavLink>
                     <NavLink href="#contacts">Contacts</NavLink>
                 </div>
 
@@ -39,7 +38,6 @@ const Navbar = () => {
                                 <NavLink href="#about">About</NavLink>
                                 <NavLink href="#skills">Skills</NavLink>
                                 <NavLink href="#projects">Projects</NavLink>
-                                <NavLink href="#tech">Technologies</NavLink>
                                 <NavLink href="#contacts">Contacts</NavLink>
                             </div>)}
                     </DisclosurePanel>
