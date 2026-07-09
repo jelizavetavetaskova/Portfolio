@@ -5,16 +5,17 @@ interface CardProps {
     title: string;
     children: ReactNode;
     icon?: ReactNode;
+    titleClassName?: string;
 }
 
-const Card = ({icon, title, children}: CardProps) => {
+const Card = ({icon, title, children, titleClassName}: CardProps) => {
     return (
         <div className={styles.card}>
             {icon &&
                 <span className={styles.cardIcon}>{icon}</span>
             }
 
-            <h3>{title}</h3>
+            <h3 className={titleClassName}>{title}</h3>
             <div className={styles.cardContent}>{children}</div>
         </div>
     )

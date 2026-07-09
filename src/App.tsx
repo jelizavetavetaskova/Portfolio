@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.tsx";
 import Hero from "./sections/Hero.tsx";
 import About from "./sections/About.tsx";
 import Skills from "./sections/Skills.tsx";
+import Projects from "./sections/Projects.tsx";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <Hero />
           <About />
           <Skills />
+          <Projects />
       </>
   )
 }
