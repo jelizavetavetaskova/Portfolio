@@ -1,0 +1,16 @@
+.section {
+    scroll-margin-top: 90px;
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0 30px 60px;
+}
+
+.section .title {
+    font-size: var(--text-5xl);
+    color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 10px 30px 15px 30px;
+    }
+}

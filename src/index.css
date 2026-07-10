@@ -49,37 +49,12 @@ body {
 }
 
 #about {
-    border-bottom: 1px solid var(--border);
-    padding-left: 60px;
-    margin-top: 20px;
     display: flex;
     flex-direction: row;
     gap: 15%;
-    padding-bottom: 30px;
-}
-
-#skills {
-    border-bottom: 1px solid var(--border);
-    padding-left: 60px;
-    padding-right: 60px;
-    margin-top: 20px;
-    padding-bottom: 30px;
-}
-
-#projects {
-    border-bottom: 1px solid var(--border);
-    padding-left: 60px;
-    padding-right: 60px;
-    margin-top: 20px;
-    padding-bottom: 30px;
 }
 
 #contacts {
-    border-bottom: 1px solid var(--border);
-    padding-left: 60px;
-    padding-right: 60px;
-    margin-top: 20px;
-    padding-bottom: 30px;
     display: flex;
     flex-direction: row;
     gap: 20%

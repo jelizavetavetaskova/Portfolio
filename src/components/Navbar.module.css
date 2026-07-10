@@ -52,7 +52,11 @@
     }
 
     .navbarMobile {
-        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: var(--bg-primary);
         border-bottom: 1px solid var(--border);
         display: flex;
         flex-direction: row;
@@ -60,6 +64,7 @@
         align-items: center;
         padding: 8px 20px;
         z-index: 50;
+        box-sizing: border-box;
     }
 
     .icon {

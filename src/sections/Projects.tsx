@@ -1,11 +1,11 @@
 import styles from "./Projects.module.css";
 import Card from "../components/Card.tsx";
 import {SiGithub, SiReact, SiSupabase, SiTypescript, SiVite, SiYoutube} from "react-icons/si";
+import Section from "../components/Section.tsx";
 
 const Projects = () => {
     return (
-        <section id="projects">
-            <h1 className={styles.title}>Things I've built</h1>
+        <Section id="projects" title="Things I've built">
             <div className={styles.projects}>
                 <Card title="SKAITRIXA" titleClassName={styles.projectTitle}>
                     <h4>Mental math training platform for primary school students</h4>
@@ -32,7 +32,7 @@ const Projects = () => {
                     <h4>Something exciting is on its way...</h4>
                 </Card>
             </div>
-        </section>
+        </Section>
     )
 }
 

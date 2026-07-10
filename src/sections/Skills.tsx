@@ -13,6 +13,7 @@ import {
 } from "react-icons/si";
 import "devicon/devicon-base.css";
 import {Bug, Code, Database, Terminal} from "lucide-react";
+import Section from "../components/Section.tsx";
 
 const Skills = () => {
     const skills = [
@@ -64,15 +65,13 @@ const Skills = () => {
     ]
 
     return (
-        <section id="skills">
-            <h1 className={styles.title}>My Skills</h1>
-
+        <Section id="skills" title="My Skills">
             <div className={styles.skillCards}>
                 {skills.map((skill) => (
                     <Card key={skill.title} title={skill.title} icon={skill.icon}>{skill.children}</Card>
                 ))}
             </div>
-        </section>
+        </Section>
     )
 }
 

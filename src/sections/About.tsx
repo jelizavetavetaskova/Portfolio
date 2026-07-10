@@ -1,6 +1,7 @@
 import styles from "./About.module.css";
 import Card from "../components/Card.tsx";
 import {Book, Code, Puzzle, Rocket} from "lucide-react";
+import Section from "../components/Section.tsx";
 
 const About = () => {
     const cards = [
@@ -27,10 +28,8 @@ const About = () => {
     ]
 
     return (
-        <section id="about">
+        <Section id="about" title="A bit about me">
             <div className={styles.aboutText}>
-                <h1 className={styles.title}>A bit about me</h1>
-
                 <p>
                     What drew me to software development was curiosity. What keeps me here is the opportunity to solve
                     real problems and build products that people actually use.
@@ -51,7 +50,7 @@ const About = () => {
                     <Card key={card.title} title={card.title} icon={card.icon}>{card.children}</Card>
                 ))}
             </div>
-        </section>
+        </Section>
     )
 }
 

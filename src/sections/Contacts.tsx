@@ -3,13 +3,12 @@ import Card from "../components/Card.tsx";
 import {MdEmail} from "react-icons/md";
 import {SiGithub} from "react-icons/si";
 import {SlSocialLinkedin} from "react-icons/sl";
+import Section from "../components/Section.tsx";
 
 const Contacts = () => {
     return (
-        <section id="contacts">
+        <Section id="contacts" title="How to reach me">
             <div className={styles.contactsSection}>
-                <h1 className={styles.title}>How to reach me</h1>
-
                 <div className={styles.contacts}>
                     <a href="mailto:vetaskovaelizaveta741@gmail.com" className={styles.link}>
                         <Card title="Email" icon={<MdEmail className={styles.icon}/>}>
@@ -42,7 +41,7 @@ const Contacts = () => {
             <div className={styles.image}>
                 <img src="/fox-for-about.png" alt="mascot"/>
             </div>
-        </section>
+        </Section>
     )
 }
 
