@@ -1,15 +1,21 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20%
+}
+
 .title {
     font-size: var(--text-5xl);
     margin-bottom: 20px;
 }
 
 .contactsSection {
-    width: 100%;
+    width: 40%;
 }
 
 .image {
     margin-top: 55px;
-    width: 100%;
+    width: 40%;
 }
 
 .image img {

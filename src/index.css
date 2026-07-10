@@ -48,18 +48,6 @@ body {
     color: var(--text-primary);
 }
 
-#about {
-    display: flex;
-    flex-direction: row;
-    gap: 15%;
-}
-
-#contacts {
-    display: flex;
-    flex-direction: row;
-    gap: 20%
-}
-
 @media (max-width: 768px) {
     #about {
         flex-direction: column;

@@ -29,6 +29,7 @@ const About = () => {
 
     return (
         <Section id="about" title="A bit about me">
+            <div className={styles.about}>
             <div className={styles.aboutText}>
                 <p>
                     What drew me to software development was curiosity. What keeps me here is the opportunity to solve
@@ -49,6 +50,7 @@ const About = () => {
                 {cards.map((card) => (
                     <Card key={card.title} title={card.title} icon={card.icon}>{card.children}</Card>
                 ))}
+            </div>
             </div>
         </Section>
     )
