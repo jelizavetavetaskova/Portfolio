@@ -1,9 +1,13 @@
 import NavLink from "./NavLink.tsx";
 import {Disclosure, DisclosureButton, DisclosurePanel} from "@headlessui/react";
-import {Menu, Sun, X} from "lucide-react";
+import {Menu, Moon, Sun, X} from "lucide-react";
 import styles from "./Navbar.module.css";
+import {useContext} from "react";
+import {ThemeContext} from "../context/ThemeContext.ts";
 
 const Navbar = () => {
+    const {theme, setTheme} = useContext(ThemeContext);
+
     return (
         <>
             <div className={styles.navbarDesktop}>
@@ -19,7 +23,16 @@ const Navbar = () => {
                 </div>
 
                 <div className={styles.settings}>
-                    <button className={styles.theme}><Sun size={30}/></button>
+                    <button
+                        className={styles.theme}
+                            onClick={() => theme === "dark" ? setTheme("light") : setTheme("dark")}
+                    >
+                        {theme === "dark" ?
+                            <Sun size={30}/>
+                            :
+                            <Moon size={30}/>
+                        }
+                    </button>
                     <p>EN</p>
                 </div>
             </div>

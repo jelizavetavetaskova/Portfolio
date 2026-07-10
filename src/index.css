@@ -36,6 +36,16 @@
     --spacing-lg: 32px;
 }
 
+.light-theme {
+    --bg-primary: #f3f4f6;
+    --bg-secondary: lightgray;
+
+    --text-primary: #16171d;
+    --text-secondary: #4b5563;
+
+    --border: lightgray;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
