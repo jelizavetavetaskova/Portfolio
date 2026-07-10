@@ -30,8 +30,11 @@
 
 @media (max-width: 768px) {
     .about {
+        width: 100%;
         flex-direction: column;
         gap: 20px;
+        align-items: center;
+        justify-content: center;
     }
 
     .aboutText {
@@ -51,5 +54,6 @@
         grid-template-columns: 1fr;
         width: 80%;
         gap: 10px;
+        margin: 0 auto;
     }
 }

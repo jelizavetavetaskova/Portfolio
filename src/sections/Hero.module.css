@@ -8,6 +8,7 @@
     position: absolute;
     margin: 40px 180px;
     width: 30%;
+    top: 90px;
 }
 
 .hello p {
@@ -75,6 +76,7 @@
         margin: 65px 30px 5px 30px;
         width: 80%;
         position: relative;
+        top: 0;
     }
 
     .hello p {

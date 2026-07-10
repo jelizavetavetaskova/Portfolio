@@ -1,7 +1,7 @@
 .section {
     scroll-margin-top: 90px;
     border-bottom: 1px solid var(--border);
-    padding: 20px 0 30px 60px;
+    padding: 20px 60px 30px 60px;
 }
 
 .section .title {
@@ -13,5 +13,10 @@
 @media (max-width: 768px) {
     .section {
         padding: 10px 30px 15px 30px;
+    }
+
+    .section .title {
+        font-size: var(--text-4xl);
+        margin-bottom: 10px;
     }
 }

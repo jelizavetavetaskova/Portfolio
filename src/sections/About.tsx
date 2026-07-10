@@ -30,27 +30,27 @@ const About = () => {
     return (
         <Section id="about" title="A bit about me">
             <div className={styles.about}>
-            <div className={styles.aboutText}>
-                <p>
-                    What drew me to software development was curiosity. What keeps me here is the opportunity to solve
-                    real problems and build products that people actually use.
-                </p>
-                <p>
-                    I build full-stack web applications using Spring Boot and React, from backend APIs to responsive
-                    user interfaces. I believe that great products are built on clean architecture, thoughtful UX, and
-                    attention to detail.
-                </p>
-                <p>
-                    For me, every project is more than an opportunity to write code - it's a chance to create something
-                    truly useful.
-                </p>
-            </div>
+                <div className={styles.aboutText}>
+                    <p>
+                        What drew me to software development was curiosity. What keeps me here is the opportunity to solve
+                        real problems and build products that people actually use.
+                    </p>
+                    <p>
+                        I build full-stack web applications using Spring Boot and React, from backend APIs to responsive
+                        user interfaces. I believe that great products are built on clean architecture, thoughtful UX, and
+                        attention to detail.
+                    </p>
+                    <p>
+                        For me, every project is more than an opportunity to write code - it's a chance to create something
+                        truly useful.
+                    </p>
+                </div>
 
-            <div className={styles.aboutCards}>
-                {cards.map((card) => (
-                    <Card key={card.title} title={card.title} icon={card.icon}>{card.children}</Card>
-                ))}
-            </div>
+                <div className={styles.aboutCards}>
+                    {cards.map((card) => (
+                        <Card key={card.title} title={card.title} icon={card.icon}>{card.children}</Card>
+                    ))}
+                </div>
             </div>
         </Section>
     )
