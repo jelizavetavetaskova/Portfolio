@@ -29,6 +29,10 @@
 }
 
 @media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        gap: 20px;
+    }
 
     .aboutText {
         width: 80%;

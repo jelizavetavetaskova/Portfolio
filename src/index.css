@@ -47,15 +47,3 @@ body {
     background: var(--bg-primary);
     color: var(--text-primary);
 }
-
-@media (max-width: 768px) {
-    #about {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    #contacts {
-        flex-direction: column;
-        gap: 20px;
-    }
-}

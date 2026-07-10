@@ -38,12 +38,22 @@
 }
 
 @media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contactsSection {
+        width: 100%;
+    }
+
     .title {
         font-size: var(--text-4xl);
     }
 
     .image {
         margin-top: 20px;
+        width: 100%;
     }
 
     .image img {
