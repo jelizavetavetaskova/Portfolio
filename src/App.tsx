@@ -5,6 +5,7 @@ import About from "./sections/About.tsx";
 import Skills from "./sections/Skills.tsx";
 import Projects from "./sections/Projects.tsx";
 import Contacts from "./sections/Contacts.tsx";
+import Footer from "./components/Footer.tsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Skills />
           <Projects />
           <Contacts />
+          <Footer />
       </>
   )
 }
