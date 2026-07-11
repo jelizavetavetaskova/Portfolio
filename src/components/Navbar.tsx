@@ -53,6 +53,24 @@ const Navbar = () => {
                     <div>
                         <img src="/fox.png" alt="fox icon" className={styles.icon}/>
                     </div>
+
+                    <button
+                        className={styles.theme}
+                        onClick={() => theme === "dark" ? setTheme("light") : setTheme("dark")}
+                    >
+                        {theme === "dark" ?
+                            <Sun size={30}/>
+                            :
+                            <Moon size={30}/>
+                        }
+                    </button>
+
+                    <select name="language" id="language" onChange={handleLanguageChange} value={i18n.language} className={styles.langSelect}>
+                        <option value="en">EN</option>
+                        <option value="lv">LV</option>
+                        <option value="ru">RU</option>
+                    </select>
+
                     <DisclosureButton className={styles.menu}>
                         {({open}) => open ? <X /> : <Menu />}
                     </DisclosureButton>

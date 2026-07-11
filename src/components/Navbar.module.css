@@ -105,4 +105,10 @@
         border: none;
         color: var(--text-primary);
     }
+
+    .theme {
+        background: var(--bg-primary);
+        color: var(--text-primary);
+        border: none;
+    }
 }

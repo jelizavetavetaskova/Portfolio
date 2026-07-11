@@ -16,7 +16,7 @@ const Hero = () => {
                 </div>
                 <div className={styles.buttons}>
                     <a href="#projects" className={styles.projectsLink}>{t("my_projects_btn")}</a>
-                    <button className={styles.cvButton}>{t("cv_btn")}</button>
+                    <a href="/Jelizaveta_Vetaskova_Resume.pdf" className={styles.cvButton} download>{t("cv_btn")}</a>
                 </div>
             </div>
 
