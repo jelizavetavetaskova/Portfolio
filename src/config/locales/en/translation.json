@@ -1,0 +1,42 @@
+{
+  "navbar_about": "About",
+  "navbar_skills": "Skills",
+  "navbar_projects": "Projects",
+  "navbar_contacts": "Contacts",
+
+  "greeting": "Hello, I am",
+  "developer": "Developer",
+  "hero_description": "I develop web applications using Spring Boot and React. Passionate about solving real-world problems, clean code, automation, and user-friendly interfaces.",
+
+  "my_projects_btn": "My projects",
+  "cv_btn": "Download CV",
+
+  "about_heading": "A bit about me",
+  "about_motivation": "What drew me to software development was curiosity. What keeps me here is the opportunity to solve real problems and build products that people actually use.",
+  "about_what_i_do": "I develop full-stack web applications using Spring Boot and React, from backend APIs to responsive user interfaces. I believe that great products are built on clean architecture, thoughtful UX, and attention to details.",
+  "about_attitude": "For me, every project is more than an opportunity to write code - it's a chance to create something truly useful.",
+
+  "about_problem_solver": "Problem Solver",
+  "about_problem_solver_description": "Turning complex requirements into simple solutions",
+  "about_continuous_learner": "Continuous Learner",
+  "about_continuous_learner_description": "Always exploring new technologies and improving my skills",
+  "about_clean_code": "Clean Code",
+  "about_clean_code_description": "Writing maintainable, readable, and reliable software",
+  "about_product_mindset": "Product Mindset",
+  "about_product_mindset_description": "Building applications that solve real problems for real users",
+
+  "skills_heading": "My Skills",
+  "skills_languages_and_frameworks": "Languages & Frameworks",
+  "skills_databases": "Databases",
+  "skills_testing": "Testing",
+  "skills_devops": "Version Control & DevOps",
+
+  "projects_heading": "Things I've built",
+  "skaitrixa_subheading": "Mental math training platform for primary school students",
+  "skaitrixa_description": "Developed the full application cycle - from database structure to a PWA with offline mode. Built an admin panel with CRUD for schools, classes and users, plus a system for teachers to create tests and students to complete them. Wrote unit tests (Vitest + React Testing Library) and E2E tests (Cypress).",
+  "projects_coming_soon": "Coming soon...",
+  "projects_coming_soon_description": "Something exciting is on its way...",
+
+  "contacts_heading": "How to reach me",
+  "contacts_email": "Email"
+}
