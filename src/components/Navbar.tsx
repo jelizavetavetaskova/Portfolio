@@ -4,9 +4,11 @@ import {Menu, Moon, Sun, X} from "lucide-react";
 import styles from "./Navbar.module.css";
 import {useContext} from "react";
 import {ThemeContext} from "../context/ThemeContext.ts";
+import {useTranslation} from "react-i18next";
 
 const Navbar = () => {
     const {theme, setTheme} = useContext(ThemeContext);
+    const {t} = useTranslation();
 
     return (
         <>
@@ -16,10 +18,10 @@ const Navbar = () => {
                 </div>
 
                 <div className={styles.links}>
-                    <NavLink href="#about">About</NavLink>
-                    <NavLink href="#skills">Skills</NavLink>
-                    <NavLink href="#projects">Projects</NavLink>
-                    <NavLink href="#contacts">Contacts</NavLink>
+                    <NavLink href="#about">{t("navbar_about")}</NavLink>
+                    <NavLink href="#skills">{t("navbar_skills")}</NavLink>
+                    <NavLink href="#projects">{t("navbar_projects")}</NavLink>
+                    <NavLink href="#contacts">{t("navbar_contacts")}</NavLink>
                 </div>
 
                 <div className={styles.settings}>
@@ -48,10 +50,10 @@ const Navbar = () => {
                     <DisclosurePanel className={styles.panel}>
                         {({close}) => (
                             <div className={styles.links} onClick={() => close()}>
-                                <NavLink href="#about">About</NavLink>
-                                <NavLink href="#skills">Skills</NavLink>
-                                <NavLink href="#projects">Projects</NavLink>
-                                <NavLink href="#contacts">Contacts</NavLink>
+                                <NavLink href="#about">{t("navbar_about")}</NavLink>
+                                <NavLink href="#skills">{t("navbar_skills")}</NavLink>
+                                <NavLink href="#projects">{t("navbar_projects")}</NavLink>
+                                <NavLink href="#contacts">{t("navbar_contacts")}</NavLink>
                             </div>)}
                     </DisclosurePanel>
                 </Disclosure>

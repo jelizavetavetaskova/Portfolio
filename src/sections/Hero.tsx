@@ -1,22 +1,22 @@
 import styles from "./Hero.module.css";
+import {useTranslation} from "react-i18next";
 
 const Hero = () => {
+    const {t} = useTranslation();
+
     return (
         <section className={styles.hero}>
             <div className={styles.about}>
                 <div className={styles.hello}>
-                    <p>Hello! I am a</p>
-                    <h1><span>Fullstack</span> Developer</h1>
+                    <p>{t("greeting")}</p>
+                    <h1><span>Fullstack</span> {t("developer")}</h1>
                 </div>
                 <div className={styles.description}>
-                    <p>
-                        I develop web applications using Spring Boot and React. Passionate about solving real-world
-                        problems, clean code, automation, and user-friendly interfaces.
-                    </p>
+                    <p>{t("hero_description")}</p>
                 </div>
                 <div className={styles.buttons}>
-                    <a href="#projects" className={styles.projectsLink}>My projects</a>
-                    <button className={styles.cvButton}>Download CV</button>
+                    <a href="#projects" className={styles.projectsLink}>{t("my_projects_btn")}</a>
+                    <button className={styles.cvButton}>{t("cv_btn")}</button>
                 </div>
             </div>
 

@@ -14,12 +14,16 @@ import {
 import "devicon/devicon-base.css";
 import {Bug, Code, Database, Terminal} from "lucide-react";
 import Section from "../components/Section.tsx";
+import {useTranslation} from "react-i18next";
 
 const Skills = () => {
+    const {t} = useTranslation();
+
     const skills = [
         {
+            key: "skills_languages_and_frameworks",
             icon: <Code/>,
-            title: "Languages & Frameworks",
+            title: t("skills_languages_and_frameworks"),
             children:
             <ul className={styles.techGroup}>
                 <li><i className={`devicon-java-plain ${styles.techIcon}`} />Java</li>
@@ -29,8 +33,9 @@ const Skills = () => {
             </ul>
         },
         {
+            key: "skills_databases",
             icon: <Database/>,
-            title: "Databases",
+            title: t("skills_databases"),
             children:
                 <ul className={styles.techGroup}>
                     <li><SiMysql className={styles.techIcon} />MySQL</li>
@@ -39,8 +44,9 @@ const Skills = () => {
                 </ul>
         },
         {
+            key: "skills_testing",
             icon: <Bug />,
-            title: "Testing",
+            title: t("skills_testing"),
             children:
                 <ul className={styles.techGroup}>
                     <li><SiJunit5 className={styles.techIcon} />JUnit 5</li>
@@ -51,8 +57,9 @@ const Skills = () => {
                 </ul>
         },
         {
+            key: "skills_devops",
             icon: <Terminal />,
-            title: "Version Control & DevOps",
+            title: t("skills_devops"),
             children:
                 <ul className={styles.techGroup}>
                     <li><SiGit className={styles.techIcon} />Git</li>
@@ -65,10 +72,10 @@ const Skills = () => {
     ]
 
     return (
-        <Section id="skills" title="My Skills">
+        <Section id="skills" title={t("skills_heading")}>
             <div className={styles.skillCards}>
                 {skills.map((skill) => (
-                    <Card key={skill.title} title={skill.title} icon={skill.icon}>{skill.children}</Card>
+                    <Card key={skill.key} title={skill.title} icon={skill.icon}>{skill.children}</Card>
                 ))}
             </div>
         </Section>

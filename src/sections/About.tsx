@@ -2,53 +2,50 @@ import styles from "./About.module.css";
 import Card from "../components/Card.tsx";
 import {Book, Code, Puzzle, Rocket} from "lucide-react";
 import Section from "../components/Section.tsx";
+import {useTranslation} from "react-i18next";
 
 const About = () => {
+    const {t} = useTranslation();
+
     const cards = [
         {
-            title: "Problem Solver",
-            children: <>Turning complex requirements into simple solutions.</>,
+            key: "about_problem_solver",
+            title: t("about_problem_solver"),
+            children: <>{t("about_problem_solver_description")}</>,
             icon: <Puzzle/>
         },
         {
-            title: "Continuous learner",
-            children: <>Always exploring new technologies and improving my skills.</>,
+            key: "about_continuous_learner",
+            title: t("about_continuous_learner"),
+            children: <>{t("about_continuous_learner_description")}</>,
             icon: <Book/>
         },
         {
-            title: "Clean Code",
-            children: <>Writing maintainable, readable, and reliable software.</>,
+            key: "about_clean_code",
+            title: t("about_clean_code"),
+            children: <>{t("about_clean_code_description")}</>,
             icon: <Code/>
         },
         {
-            title: "Product Mindset",
-            children: <>Building applications that solve real problems for real users.</>,
+            key: "about_product_mindset",
+            title: t("about_product_mindset"),
+            children: <>{t("about_product_mindset_description")}</>,
             icon: <Rocket/>
         }
     ]
 
     return (
-        <Section id="about" title="A bit about me">
+        <Section id="about" title={t("about_heading")}>
             <div className={styles.about}>
                 <div className={styles.aboutText}>
-                    <p>
-                        What drew me to software development was curiosity. What keeps me here is the opportunity to solve
-                        real problems and build products that people actually use.
-                    </p>
-                    <p>
-                        I build full-stack web applications using Spring Boot and React, from backend APIs to responsive
-                        user interfaces. I believe that great products are built on clean architecture, thoughtful UX, and
-                        attention to detail.
-                    </p>
-                    <p>
-                        For me, every project is more than an opportunity to write code - it's a chance to create something
-                        truly useful.
-                    </p>
+                    <p>{t("about_motivation")}</p>
+                    <p>{t("about_what_i_do")}</p>
+                    <p>{t("about_attitude")}</p>
                 </div>
 
                 <div className={styles.aboutCards}>
                     {cards.map((card) => (
-                        <Card key={card.title} title={card.title} icon={card.icon}>{card.children}</Card>
+                        <Card key={card.key} title={card.title} icon={card.icon}>{card.children}</Card>
                     ))}
                 </div>
             </div>

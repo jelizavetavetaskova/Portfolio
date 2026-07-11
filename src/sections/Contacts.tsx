@@ -4,15 +4,18 @@ import {MdEmail} from "react-icons/md";
 import {SiGithub} from "react-icons/si";
 import {SlSocialLinkedin} from "react-icons/sl";
 import Section from "../components/Section.tsx";
+import {useTranslation} from "react-i18next";
 
 const Contacts = () => {
+    const {t} = useTranslation();
+
     return (
-        <Section id="contacts" title="How to reach me">
+        <Section id="contacts" title={t("contacts_heading")}>
             <div className={styles.wrapper}>
                 <div className={styles.contactsSection}>
                     <div className={styles.contacts}>
                         <a href="mailto:vetaskovaelizaveta741@gmail.com" className={styles.link}>
-                            <Card title="Email" icon={<MdEmail className={styles.icon}/>}>
+                            <Card title={t("contacts_email")} icon={<MdEmail className={styles.icon}/>}>
                                 <p>vetaskovaelizaveta741@gmail.com</p>
                             </Card>
                         </a>
