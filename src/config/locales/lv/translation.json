@@ -1,3 +1,42 @@
 {
+  "navbar_about": "Par mani",
+  "navbar_skills": "Prasmes",
+  "navbar_projects": "Projekti",
+  "navbar_contacts": "Kontakti",
 
+  "greeting": "Sveiki, es esmu",
+  "developer": "Izstrādātājs",
+  "hero_description": "Es izstrādāju web lietotnes, izmantojot Spring Boot un React. Man patīk risināt reālās problēmas, tīrs kods, automatizācija un lietotājam draudzīgas saskarnes.",
+
+  "my_projects_btn": "Mani projekti",
+  "cv_btn": "Lejupielādēt CV",
+
+  "about_heading": "Mazliet par mani",
+  "about_motivation": "Interese mani aizveda līdz tīmekļa izstrādei, taču iespēja risināt reālas problēmas un radīt produktus, ko lietotāji patiešām izmanto, pārliecināja mani palikt šajā jomā.",
+  "about_what_i_do": "Es izstrādāju fullstack lietotnes, izmantojot Spring Boot un React - no backend API līdz adaptīvām sakarnēm. Es ticu, ka labi produkti ir veidoti uz tīras arhitektūras, rūpīgi pārdomāta UX un uzmanības pret detaļām.",
+  "about_attitude": "Katrs projekts man ir ne tikai iespēja rakstīt kodu. Tas ir iespēja radīt kaut ko patiešām noderīgu.",
+
+  "about_problem_solver": "Risinu problēmas",
+  "about_problem_solver_description": "Pārvēršu sarežģītas prasības vienkāršos risinājumos",
+  "about_continuous_learner": "Vienmēr mācos",
+  "about_continuous_learner_description": "Vienmēr iepazīstu jaunas tehnoloģijas un uzlaboju manas prasmes",
+  "about_clean_code": "Rakstu tīru kodu",
+  "about_clean_code_description": "Rakstu uzturamu, lasāmu un uzticamu kodu",
+  "about_product_mindset": "Domāju par produktu",
+  "about_product_mindset_description": "Veidoju lietotnes, kas risina reālu lietotāju reālas problēmas",
+
+  "skills_heading": "Manas Prasmes",
+  "skills_languages_and_frameworks": "Valodas & Ietvari",
+  "skills_databases": "Datubāzes",
+  "skills_testing": "Testēšana",
+  "skills_devops": "Versiju kontrole & DevOps",
+
+  "projects_heading": "Ko es esmu radījusi",
+  "skaitrixa_subheading": "Galvas rēķinu prasmju treniņa platforma sākumskolas skolēniem",
+  "skaitrixa_description": "Esmu izstrādājusi pilnu lietotnes ciklu - no datubāzes struktūras līdz pat PWA ar offline režīmu. Esmu izstrādājusi admin paneli ar CRUD skolām, klasēm un lietotājiem, kā arī sistēmu, kurā skolotājiem ir iespēja veidot testus, bet skolēniem - pildīt tos. Esmu uzrakstījusi vairākus vienību testus (Vitest + React Testing Library) un E2E testus (Cypress).",
+  "projects_coming_soon": "Coming soon...",
+  "projects_coming_soon_description": "Kaut kas interesants ir ceļā...",
+
+  "contacts_heading": "Kā ar mani sazināties",
+  "contacts_email": "E-pasts"
 }
