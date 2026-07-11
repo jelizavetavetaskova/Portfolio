@@ -12,7 +12,7 @@
     flex-direction: row;
     padding: 20px 48px;
     align-items: center;
-    gap: 160px;
+    gap: 20px;
     z-index: 50;
 }
 
@@ -44,6 +44,14 @@
 .icon {
     width: 40px;
     height: 40px;
+}
+
+.langSelect {
+    padding: 5px;
+    background: var(--bg-primary);
+    border: none;
+    color: var(--text-primary);
+    font-size: var(--text-lg);
 }
 
 @media (max-width: 768px) {

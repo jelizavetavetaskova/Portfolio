@@ -2,13 +2,17 @@ import NavLink from "./NavLink.tsx";
 import {Disclosure, DisclosureButton, DisclosurePanel} from "@headlessui/react";
 import {Menu, Moon, Sun, X} from "lucide-react";
 import styles from "./Navbar.module.css";
-import {useContext} from "react";
+import {type ChangeEvent, useContext} from "react";
 import {ThemeContext} from "../context/ThemeContext.ts";
 import {useTranslation} from "react-i18next";
 
 const Navbar = () => {
     const {theme, setTheme} = useContext(ThemeContext);
-    const {t} = useTranslation();
+    const {t, i18n} = useTranslation();
+
+    const  handleLanguageChange = (e: ChangeEvent<HTMLSelectElement>) => {
+        i18n.changeLanguage(e.target.value);
+    }
 
     return (
         <>
@@ -35,7 +39,12 @@ const Navbar = () => {
                             <Moon size={30}/>
                         }
                     </button>
-                    <p>EN</p>
+
+                    <select name="language" id="language" onChange={handleLanguageChange} value={i18n.language} className={styles.langSelect}>
+                        <option value="en">EN</option>
+                        <option value="lv">LV</option>
+                        <option value="ru">RU</option>
+                    </select>
                 </div>
             </div>
 
